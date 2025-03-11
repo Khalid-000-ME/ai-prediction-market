@@ -5,3 +5,6 @@ node_modules
 backend/.venv
 backend/__pycache__
 access_token.json
+access_token
+blockend/access_token
+blockend/access_token.json
