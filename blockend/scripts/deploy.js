@@ -3,8 +3,8 @@ const hre = require("hardhat");
 async function main() {
     const ReactivePredictionMarket = await hre.ethers.getContractFactory("ReactivePredictionMarket");
     const market = await ReactivePredictionMarket.deploy();
-    await market.deployed();
-    console.log("Contract deployed to:", market.address);
+    await market.waitForDeployment();
+    console.log("Contract deployed to:",await market.getAddress());
 }
 
 main()
