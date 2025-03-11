@@ -4,3 +4,4 @@ node_modules
 .venv
 backend/.venv
 backend/__pycache__
+access_token.json
